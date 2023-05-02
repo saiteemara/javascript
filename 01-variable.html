@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //only use let when we need to change the variable.
+
+        let var1 = 3;
+        console.log(var1);
+
+        let cal = 2 + 2;
+        console.log(cal);
+        console.log(cal + 2);
+
+        let result = cal + 2;
+        console.log(result);
+
+        let message = 'hello';
+        console.log(message);
+        console.log(';');
+
+       // going to change the value saved inside variable 
+       // syntax rules for re-assigning a value
+       // we can't create two variables with same name in let.
+       var1 = 5;
+       console.log(var1); 
+    
+       var1 = var1 + 1;
+       console.log(var1);
+       
+       // const = can't change it's value later.
+       // this value stays constant that's why it's called constant.
+
+       const var2 = 3; // var2 = 5; it print error message.
+       console.log(var2)
+       
+       //those are 3 ways to create variables in javascript.
+       //(let,const,var)
+
+       console.log(typeof var2);
+       console.log(typeof message);
+    </script>
+</body>
+</html>

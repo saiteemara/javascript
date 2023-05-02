@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+    <script>
+        //booleans are another type of value in JS.There are only two boolean values:(TRUE,FALSE).
+        // A boolean value represents wheather something is TRUE or FALSE.
+
+        true
+        false
+        console.log(typeof true);
+        console.log(3 > 5); // comparsion operator(>,<,>=,<=,===,!==).
+        console.log(3 < 5);
+        console.log( 5 === '5.00'); //False
+        console.log(5 == '5.00');   //True( in JS don't use ==).
+
+        // comparison operators have a lower priority than math.
+        // 1.(....) 2.(* /) 3.(+ -) 4.comparison operator.
+        console.log( 3 > 5 - 5);
+
+        // if-statements
+        // 1.lets us write multiple groups of code.
+        // 2.and then decide which code to run.
+
+        if (true) {
+            console.log('hello')
+        }
+
+        if (false) {
+            console.log('hello')
+        }
+        
+        // if-else statement
+
+        if (true) { // we can write false.
+            console.log('hello')
+        }
+        else{
+            console.log('else');
+        }
+         // pratice code
+        if (30 >= 16){
+            console.log('you can drive');
+        }else{
+            console.log('you can not drive');
+        }
+
+        const age= 15;
+        if (age >= 16){
+            console.log('you can drive');
+        }else if( age >= 14 ){
+            console.log('alomst there!')
+        }else{
+            console.log('you can not drive');
+        }
+        
+
+        // turthy and falsy values
+
+        /* falsy values
+           fase , 0 , '' , NaN undefined , null.
+        */
+           console.log(!0);
+
+           console.log('text' / 5);
+
+           let var1;
+           console.log(var1);
+        
+        // Tenary operator
+
+         const result = true ? 'truthy' : 'falsy';
+           console.log(result);
+           
+    </script>
+</body>
+</html>
